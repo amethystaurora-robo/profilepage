@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textaboutme"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="120dp"
+        android:text="Tell us about yourself."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="184dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="404dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/available_bachelor" />
+
+    <ImageButton
+        android:id="@+id/aboutmebtn"
+        android:layout_width="47dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="124dp"
+        android:contentDescription="@string/button_that_allows_user_to_edit_name"
+        android:scaleType="fitEnd"
+        android:text="Name"
+        android:textColor="#130F0F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailbtn"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/phonebtn"
+        android:layout_width="47dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/button_that_allows_user_to_edit_phone_number"
+        android:scaleType="fitEnd"
+        android:text="phone number"
+        android:textColor="#130F0F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/namebtn"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/namebtn"
+        android:layout_width="47dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="92dp"
+        android:contentDescription="@string/button_that_allows_user_to_edit_email"
+        android:scaleType="fitEnd"
+        android:text="Email"
+        android:textColor="#130F0F"
+        app:layout_constraintBottom_toTopOf="@+id/phonebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/emailbtn"
+        android:layout_width="47dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/button_that_allows_user_to_edit_about_me"
+        android:scaleType="fitEnd"
+        android:text="about me"
+        android:textColor="#130F0F"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/aboutmebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phonebtn"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/edit_profile"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginBottom="6dp"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/textPhone"
+        app:layout_constraintEnd_toStartOf="@+id/namebtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textPhone"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="224dp"
+        android:text="Phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="4dp"
+        android:text="Email"
+        app:layout_constraintBottom_toTopOf="@+id/textaboutme"
+        app:layout_constraintEnd_toStartOf="@+id/emailbtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPhone"
+        app:layout_constraintVertical_bias="1.0" /><![CDATA[
+
+
+
+
+        android:layout_width="379dp"
+        android:layout_height="371dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+
+
+
+    ]]>
+</androidx.constraintlayout.widget.ConstraintLayout>
