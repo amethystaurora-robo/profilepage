@@ -1,0 +1,4 @@
+#Mon Sep 13 09:21:14 ICT 2021
+base.0=/Users/ameeicher/AndroidStudioProjects/Profilepage2/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
